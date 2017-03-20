@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Leetspeak</title>
+  </head>
+  <body>
+    <form action="/translate" method="post">
+      <label for="input">Enter a sentence</label>
+      <input id="input" name="input">
+      <button>Translate</button>
+    </form>
+    {% if result is not empty %}
+      {{ result }}
+    {% endif %}
+  </body>
+</html>
